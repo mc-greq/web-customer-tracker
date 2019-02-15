@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web-customer-tracker">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_customer_tracker</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web-customer-tracker" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="spring-aop" />
+          <element id="library" level="project" name="commons-logging-1.2" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.14" />
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="project" name="c3p0-0.9.5.2" />
+          <element id="library" level="project" name="javax.activation-1.2.0" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="web-customer-tracker/web/Web" />
+    </root>
+  </artifact>
+</component>

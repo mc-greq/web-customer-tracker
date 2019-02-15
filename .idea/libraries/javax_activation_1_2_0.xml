@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="javax.activation-1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../JAVA9springmvc/javax.activation-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JAVA9springmvc/jaxb-api-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JAVA9springmvc/jaxb-core-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../JAVA9springmvc/jaxb-impl-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
