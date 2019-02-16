@@ -1,12 +1,15 @@
 package springhibernate.app;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import springhibernate.app.dao.CustomerDAO;
 import springhibernate.app.entities.Customer;
+import springhibernate.app.services.CustomerService;
+import springhibernate.app.services.CustomerServiceImlp;
 
 import java.util.List;
 
@@ -15,18 +18,18 @@ import java.util.List;
 public class CustomerController {
 
     // need to inject the customer DAO
-    private CustomerDAO customerDAO;
+    private CustomerService customerService;
 
     @Autowired
-    public CustomerController(CustomerDAO customerDAO) {
-        this.customerDAO = customerDAO;
+    public CustomerController(CustomerService customerService) {
+        this.customerService = customerService;
     }
 
-    @RequestMapping("/list")
+    @GetMapping("/list")
     public String listCustomers(Model theModel){
 
         // get customers from the dao
-        List<Customer> customers = customerDAO.getCustomers();
+        List<Customer> customers = customerService.getCustomers();
 
         // add the customers to the model
         theModel.addAttribute("customers", customers);
