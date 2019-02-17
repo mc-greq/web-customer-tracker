@@ -28,6 +28,9 @@
 
         <form:form action="saveCustomer" modelAttribute="customer" method="POST">
 
+            <!-- need to assosciate this date with customer id -->
+            <form:hidden path="id"/>
+
             <table>
                 <tbody>
                 <tr>
