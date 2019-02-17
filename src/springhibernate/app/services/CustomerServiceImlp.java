@@ -41,4 +41,10 @@ public class CustomerServiceImlp implements CustomerService {
     public void deleteCustomer(int customerId) {
         customerDAO.deleteCustomer(customerId);
     }
+
+    @Override
+    @Transactional
+    public List<Customer> searchCustomers(String searchName) {
+        return customerDAO.searchCustomers(searchName);
+    }
 }
