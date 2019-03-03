@@ -13,6 +13,7 @@
           <element id="library" level="project" name="Hibernate" />
           <element id="library" level="project" name="c3p0-0.9.5.2" />
           <element id="library" level="project" name="javax.activation-1.2.0" />
+          <element id="library" level="project" name="aspectjweaver-1.9.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="web-customer-tracker/web/Web" />

@@ -9,12 +9,12 @@ import springhibernate.app.entities.Customer;
 import java.util.List;
 
 @Service
-public class CustomerServiceImlp implements CustomerService {
+public class CustomerServiceImpl implements CustomerService {
 
     private CustomerDAO customerDAO;
 
     @Autowired
-    public CustomerServiceImlp(CustomerDAO customerDAO) {
+    public CustomerServiceImpl(CustomerDAO customerDAO) {
         this.customerDAO = customerDAO;
     }
 
